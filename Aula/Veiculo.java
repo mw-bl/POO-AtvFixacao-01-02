@@ -49,5 +49,7 @@ public abstract class Veiculo {
     // done.
     public abstract String toString();
 
-    public abstract boolean equals(Veiculo veiculo);
+    // done.
+    public abstract boolean equals(Object obj);
+
 } 
