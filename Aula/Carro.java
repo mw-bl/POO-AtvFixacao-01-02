@@ -18,11 +18,11 @@ public class Carro extends Veiculo {
     public String toString() {
         return "PLACA: " + this.getPlaca() + 
                 "\nCOMBUSTIVEL NO TANQUE: " + this.getCombustivelNoTanque() +
-                "\nQUILOMETRAGEM: " + this.getPlaca() + 
+                "\nQUILOMETRAGEM: " + this.getQuilometragem() + 
                 "\nALUGADO: " + this.getAlugado() + 
                 "\nPREÇO DA DIARIA: " + this.getPrecoDiaria();
     }
-
+    
     @Override
     public boolean viajar(int distancia) {
         
@@ -39,5 +39,22 @@ public class Carro extends Veiculo {
             System.out.println("Não há combustível suficiente.");
             return false;
         }
+    }
+
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+
+        if (obj == null || getClass() != obj.getClass()) {
+            return false;
+        }
+
+        Veiculo veiculo = (Veiculo) obj;
+
+        // Comparando as placas dos veículos
+        return getPlaca().equals(veiculo.getPlaca());
     }
 }
