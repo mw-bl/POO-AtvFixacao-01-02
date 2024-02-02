@@ -29,7 +29,7 @@ public class TestarVeiculo {
         Carro carro2 = new Carro();
         carro2.setPlaca("ABC123");
 
-        System.out.println("\nComparação de placas usando equals:");
+        System.out.println("\nComparação de placas:");
         System.out.println("carro 1 igual carro 2? " + carro1.equals(carro2));
     }
 }
