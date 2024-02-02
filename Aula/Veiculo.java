@@ -40,16 +40,12 @@ public abstract class Veiculo {
         return precoDiaria;
     }
 
-    // done.
     public abstract void abastecer(int combustivel);
 
-    // done.
     public abstract boolean viajar(int distancia);
 
-    // done.
     public abstract String toString();
 
-    // done.
     public abstract boolean equals(Object obj);
 
 } 
